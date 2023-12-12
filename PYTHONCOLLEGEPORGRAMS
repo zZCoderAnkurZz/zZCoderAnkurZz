@@ -1,0 +1,18 @@
+def discount(price):
+    pass
+
+def sellingprice(price):
+    discountedprice=discount(price)
+    if discountedprice==None:
+       return price
+    else:
+       return discountedprice
+
+def main():
+    price=float(input('enter price:'))
+    print('selling price is:',sellingprice(price))
+    
+    
+
+if __name__=='__main__':
+    main()
